@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#######################################################################################################################
+
 import threading
 import time
 import os
@@ -15,8 +15,6 @@ def cl_yellow(msg): return '\033[93m' + msg + '\033[0m'
 def cl_cyan(msg): return '\033[96m' + msg + '\033[0m'
 def cl_pink(msg): return '\033[95m' + msg + '\033[0m'
 
-
-#######################################################################################################################
 #   Class: Kuka iiwa TCP communication    #####################
 SERVER_IP = '172.31.1.50'
 SERVER_PORT = 1234
@@ -238,7 +236,7 @@ class KukaServer:
 			
 if __name__ == '__main__':
 	print(cl_pink('\n==========================='))
-	print(cl_pink('     KUKA IRINA EPT SERVER'))
+	print(cl_pink('     KUKA  SERVER'))
 	print(cl_pink('===========================\n'))
 
 	rospy.init_node('kuka_server', anonymous = False)
